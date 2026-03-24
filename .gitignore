@@ -1,1 +1,5 @@
 .vercel
+.claude/
+.playwright-mcp/
+*.png
+process_notes.md
