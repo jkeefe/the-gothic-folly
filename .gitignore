@@ -3,3 +3,7 @@
 .playwright-mcp/
 *.png
 process_notes.md
+!favicon*.png
+!apple-touch-icon.png
+!images/tgf-logo.png
+!shows/images/*.png
