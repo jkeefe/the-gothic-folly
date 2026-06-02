@@ -3,41 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Gothic Folly — Black Rock City</title>
+  <title>The Gothic Folly Cathedral</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- HERO -->
   <header class="hero">
     <div class="hero-overlay"></div>
-    <div class="arch-frame">
-      <svg class="arch-svg" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M60,400 L60,200 Q60,60 300,40 Q540,60 540,200 L540,400" fill="none" stroke="rgba(255,210,120,0.35)" stroke-width="2"/>
-        <path d="M100,400 L100,210 Q100,100 300,80 Q500,100 500,210 L500,400" fill="none" stroke="rgba(255,210,120,0.2)" stroke-width="1.5"/>
-        <!-- Rose window -->
-        <circle cx="300" cy="130" r="38" fill="none" stroke="rgba(255,210,120,0.3)" stroke-width="1.5"/>
-        <circle cx="300" cy="130" r="24" fill="none" stroke="rgba(255,210,120,0.25)" stroke-width="1"/>
-        <circle cx="300" cy="130" r="8" fill="none" stroke="rgba(255,210,120,0.4)" stroke-width="1"/>
-        <line x1="300" y1="92" x2="300" y2="168" stroke="rgba(255,210,120,0.25)" stroke-width="1"/>
-        <line x1="262" y1="130" x2="338" y2="130" stroke="rgba(255,210,120,0.25)" stroke-width="1"/>
-        <line x1="273" y1="103" x2="327" y2="157" stroke="rgba(255,210,120,0.2)" stroke-width="1"/>
-        <line x1="327" y1="103" x2="273" y2="157" stroke="rgba(255,210,120,0.2)" stroke-width="1"/>
-      </svg>
-    </div>
     <div class="hero-content">
       <p class="hero-eyebrow">Black Rock City · 2026</p>
-      <h1 class="hero-title">The Gothic<br/>Folly</h1>
+      <img src="images/tgf-logo.png" class="hero-logo" alt="The Gothic Folly" />
       <p class="hero-tagline">A cathedral risen from the playa — open to all who wander beneath its arches.</p>
       <div class="hero-cta">
         <a href="#join" class="btn btn-primary">Join the Crew</a>
         <a href="#about" class="btn btn-ghost">Learn More</a>
       </div>
     </div>
-    <div class="scroll-hint">&#8595;</div>
   </header>
 
   <!-- ABOUT -->
@@ -46,7 +35,7 @@
       <div class="section-ornament">
         <span class="ornament-line"></span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 20.5 L12 16 L6.5 20.5 L8.5 13.5 L3 9 L10 9 Z" fill="#C9882A" opacity="0.7"/>
+          <path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 20.5 L12 16 L6.5 20.5 L8.5 13.5 L3 9 L10 9 Z" fill="#D04478" opacity="0.7"/>
         </svg>
         <span class="ornament-line"></span>
       </div>
@@ -81,20 +70,35 @@
       <div class="section-ornament">
         <span class="ornament-line"></span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 20.5 L12 16 L6.5 20.5 L8.5 13.5 L3 9 L10 9 Z" fill="#C9882A" opacity="0.7"/>
+          <path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 20.5 L12 16 L6.5 20.5 L8.5 13.5 L3 9 L10 9 Z" fill="#D04478" opacity="0.7"/>
         </svg>
         <span class="ornament-line"></span>
       </div>
       <h2 class="section-title">Renderings & Vision</h2>
       <div class="gallery-grid">
         <div class="gallery-item gallery-item--large">
-          <img src="images/rendering_golden_cathedral.jpg" alt="The Gothic Folly — concept rendering, golden light" class="gallery-img" />
+          <img src="images/rendering_golden_cathedral.jpg" alt="The Gothic Folly — concept rendering, golden light" class="gallery-img zoomable" onclick="openLightbox(this.src, this.alt)" />
         </div>
         <div class="gallery-item">
-          <img src="images/rendering_neon_cathedral.jpg" alt="The Gothic Folly — illuminated at night" class="gallery-img" />
+          <img src="images/rendering_neon_cathedral.jpg" alt="The Gothic Folly — illuminated at night" class="gallery-img zoomable" onclick="openLightbox(this.src, this.alt)" />
         </div>
         <div class="gallery-item">
-          <img src="images/rose_window_color.jpg" alt="The Gothic Folly — rose window design" class="gallery-img" />
+          <img src="images/rose_window_color.jpg" alt="The Gothic Folly — rose window design" class="gallery-img zoomable" onclick="openLightbox(this.src, this.alt)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/rose_window_single_sheet.jpg" alt="The Gothic Folly — rose window single sheet" class="gallery-img zoomable" onclick="openLightbox(this.src, this.alt)" />
+        </div>
+        <div class="gallery-item gallery-item--wide">
+          <img src="images/construction_documents.jpg" alt="The Gothic Folly — early construction documents, April 2026" class="gallery-img zoomable" onclick="openLightbox(this.src, this.alt)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/rendering_wireframe.jpg" alt="The Gothic Folly — wireframe elevation rendering" class="gallery-img zoomable" onclick="openLightbox(this.src, this.alt)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/model_photo_lit.jpg" alt="The Gothic Folly — physical scale model illuminated" class="gallery-img zoomable" onclick="openLightbox(this.src, this.alt)" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/model_photo_rose_window_close.jpg" alt="The Gothic Folly — scale model rose window close-up" class="gallery-img zoomable" onclick="openLightbox(this.src, this.alt)" />
         </div>
       </div>
       <p class="gallery-instagram">
@@ -104,14 +108,41 @@
     </div>
   </section>
 
-  <!-- JOIN -->
+  <!-- INTERACTIVITY -->
+  <section id="interactivity" class="interactivity">
+    <div class="container">
+      <div class="section-ornament">
+        <span class="ornament-line"></span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 20.5 L12 16 L6.5 20.5 L8.5 13.5 L3 9 L10 9 Z" fill="#D04478" opacity="0.7"/>
+        </svg>
+        <span class="ornament-line"></span>
+      </div>
+      <h2 class="section-title">Interactivity</h2>
+      <div class="interactivity-grid">
+        <div class="interactivity-text">
+          <p class="lead">The Gothic Folly is built to amplify the culture of the playa — and we're actively seeking sound camps and organizations to bring that vision to life.</p>
+          <p>We're looking to partner with artists, DJs, and sound collectives to host events and sets within our sculpture. The Gothic Folly provides the architectural space and a fully programmable LED light system that artists can use as their canvas — creating immersive, synchronized experiences.</p>
+          <p>If you're a sound camp or organization interested in collaborating, we'd love to hear from you.</p>
+          <div class="interactivity-cta">
+            <a href="mailto:thegothicfolly@gmail.com" class="btn btn-primary">Get in Touch</a>
+          </div>
+        </div>
+        <div class="interactivity-diagram">
+          <img src="images/interactivity-diagram.png" alt="Diagram showing a mutant vehicle passing the Gothic Folly sculpture with sound waves" class="interactivity-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN / SUPPORT THE BUILD -->
   <section id="join" class="support">
     <div class="support-bg"></div>
     <div class="container">
       <div class="section-ornament">
         <span class="ornament-line ornament-line--light"></span>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 20.5 L12 16 L6.5 20.5 L8.5 13.5 L3 9 L10 9 Z" fill="#F5D68A" opacity="0.8"/>
+          <path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 20.5 L12 16 L6.5 20.5 L8.5 13.5 L3 9 L10 9 Z" fill="#F070A8" opacity="0.8"/>
         </svg>
         <span class="ornament-line ornament-line--light"></span>
       </div>
@@ -137,6 +168,38 @@
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSdkx-6GBYRa3BWu4HEW5XTh1KITYpvwtKDu4TQic29hlV3beA/viewform" target="_blank" rel="noopener" class="btn btn-primary btn-large">Fill Out the Interest Form</a>
       </div>
 
+      <div class="support-build">
+        <div class="section-ornament">
+          <span class="ornament-line ornament-line--light"></span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 20.5 L12 16 L6.5 20.5 L8.5 13.5 L3 9 L10 9 Z" fill="#F070A8" opacity="0.8"/>
+          </svg>
+          <span class="ornament-line ornament-line--light"></span>
+        </div>
+        <h2 class="section-title section-title--light">Support the Build</h2>
+
+        <div class="fundraising-inner">
+          <div class="fundraising-header">
+            <span class="fundraising-label">Build Fund</span>
+          </div>
+          <div class="fundraising-track">
+            <div class="fundraising-fill" style="width: 24%"></div>
+          </div>
+          <p class="fundraising-pct">24% funded</p>
+        </div>
+
+        <div class="donate-links">
+          <a href="https://gofund.me/c5260f9d1" target="_blank" rel="noopener" class="btn btn-ghost">Donate on GoFundMe</a>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=4LQNSBFAE3DKU" target="_blank" rel="noopener" class="btn btn-ghost">Donate via PayPal</a>
+          <a href="https://venmo.com/thegothicfolly" target="_blank" rel="noopener" class="btn btn-ghost">Donate via Venmo</a>
+        </div>
+
+        <div class="tax-deductible-note">
+          <p><strong>Now Tax-Deductible</strong> — We're fiscally sponsored by Five Ton Crane, a registered 501(c)(3) nonprofit, which means your donation is tax-deductible where permitted.</p>
+          <p>If your employer offers a matching program, your contribution can often be matched 1:1 or more — worth checking before you give.</p>
+        </div>
+      </div>
+
       <p class="support-secondary">Questions? Reach us at <a href="mailto:thegothicfolly@gmail.com" class="support-link">thegothicfolly@gmail.com</a></p>
     </div>
   </section>
@@ -150,6 +213,12 @@
       <p class="footer-credit">Built with love, sweat, and playa dust.</p>
     </div>
   </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" style="display:none" role="dialog" aria-modal="true">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+    <img id="lightbox-img" class="lightbox-img" src="" alt="" />
+  </div>
 
   <!-- SUCCESS MODAL -->
   <div id="success-modal" class="modal" style="display:none">
